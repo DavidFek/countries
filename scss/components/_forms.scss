@@ -1,0 +1,17 @@
+.search-bar {
+  width: 50%;
+  height: $gutter-m;
+}
+.region-select {
+  width: 30%;
+  height: $gutter-l;
+}
+
+:root.light .search-bar {
+  background-color: $background-color-light;
+  color: $text-color-light;
+}
+:root.light .region-select {
+  background-color: $background-color-light;
+  color: $text-color-light;
+}

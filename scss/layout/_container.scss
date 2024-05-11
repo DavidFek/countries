@@ -1,0 +1,38 @@
+.config-wrapper {
+  @include flexy(null, space-between, center);
+  margin-bottom: $gutter-l;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.country-detail__subwrapper {
+  @include flexy(null, center, center);
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  gap: $gutter-xl;
+}
+.country-detail__info-wrapper {
+  @include flexy(column, null, null);
+  gap: $gutter-none;
+  max-width: 25%;
+}
+
+.country-item {
+  @include flexy(column, center, center);
+}
+
+@media (max-width: 768px) {
+  .config-wrapper {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .country-detail__subwrapper {
+    flex-direction: column;
+    gap: $gutter-s;
+  }
+  .country-detail__info-wrapper {
+    max-width: 75%;
+  }
+}

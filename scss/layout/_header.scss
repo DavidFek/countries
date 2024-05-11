@@ -1,0 +1,8 @@
+h1 {
+  text-align: center;
+  color: $text-color-dark;
+}
+
+:root.light h1 {
+  color: $text-color-light;
+}

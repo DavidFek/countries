@@ -2,11 +2,13 @@ import { useState, useContext } from "react";
 import Country from "./Country";
 import { CountryContext } from "./CountryContext";
 import { Link } from "react-router-dom";
+import { ThemeContext } from "./ThemeContext";
 
 function CountryList() {
   const { countries, error } = useContext(CountryContext);
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedRegion, setSelectedRegion] = useState("");
+  const { toggleTheme } = useContext(ThemeContext);
 
   const filteredCountries = countries.filter(
     (country) =>
@@ -41,6 +43,9 @@ function CountryList() {
           <option value="Europe">Europe</option>{" "}
           <option value="Oceania">Oceania</option>
         </select>
+        <button onClick={toggleTheme} className="button-theme">
+          Toggle Theme
+        </button>
       </div>
       <div className="country-list">
         {filteredCountries.map((country, index) => (

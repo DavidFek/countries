@@ -1,0 +1,178 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root.light {
+  background-color: white;
+}
+
+.config-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.country-detail__subwrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  gap: 3rem;
+}
+
+.country-detail__info-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  max-width: 25%;
+}
+
+.country-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .config-wrapper {
+    flex-direction: column;
+    width: 80%;
+  }
+  .country-detail__subwrapper {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .country-detail__info-wrapper {
+    max-width: 75%;
+  }
+}
+h1 {
+  text-align: center;
+  color: wheat;
+}
+
+:root.light h1 {
+  color: black;
+}
+
+.country-detail__back-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 14px;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
+  border-radius: 6px;
+  border: none;
+  background: #6e6d70;
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
+  color: wheat;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100px;
+}
+
+:root.light .country-detail__back-button {
+  background: white;
+  color: black;
+}
+
+:root.light .button-theme {
+  background: white;
+  color: black;
+}
+
+.search-bar {
+  width: 50%;
+  height: 1.5rem;
+}
+
+.region-select {
+  width: 30%;
+  height: 2rem;
+}
+
+:root.light .search-bar {
+  background-color: white;
+  color: black;
+}
+
+:root.light .region-select {
+  background-color: white;
+  color: black;
+}
+
+.country-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+  gap: 1rem;
+  justify-content: space-between;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.country-list__link {
+  text-decoration: none;
+  color: wheat;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.country-item__detail {
+  text-align: center;
+}
+
+.country-item__image {
+  width: 100%;
+  height: 250px;
+}
+
+.country-detail__imgage {
+  width: 750px;
+  height: 450px;
+}
+
+.country-detail__border-link {
+  text-decoration: none;
+  color: wheat;
+}
+
+@media (max-width: 768px) {
+  .country-list {
+    grid-template-columns: 1fr;
+  }
+  .country-detail__imgage {
+    width: 100%;
+    height: 300px;
+  }
+}
+:root.light .country-detail__border-link {
+  color: blue;
+}
+
+:root.light .country-list__link {
+  color: black;
+}
+
+:root.light .country-detail__info {
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */

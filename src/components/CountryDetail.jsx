@@ -31,30 +31,34 @@ function CountryDetail() {
         />
 
         <div className="country-detail__info-wrapper">
-          <p className="country-detail__cap">Capital: {country.capital}</p>
-          <p className="country-detail__region">Region: {country.region}</p>
-          <p className="country-detail__subregion">
+          <p className="country-detail__info country-detail__cap">
+            Capital: {country.capital}
+          </p>
+          <p className="country-detail__info country-detail__region">
+            Region: {country.region}
+          </p>
+          <p className="country-detail__info country-detail__subregion">
             Subregion: {country.subregion}
           </p>
-          <p className="country-detail__pop">
+          <p className="country-detail__info country-detail__pop">
             Population: {country.population.toLocaleString()}
           </p>
-          <p className="country-detail__area">
+          <p className="country-detail__info country-detail__area">
             Area: {country.area.toLocaleString()} km²
           </p>
-          <p className="country-detail__timezone">
+          <p className="country-detail__info country-detail__timezone">
             Timezones: {country.timezones.join(", ")}
           </p>
-          <p className="country-detail__curr">
+          <p className="country-detail__info country-detail__curr">
             Currencies:{" "}
             {Object.values(country.currencies)
               .map((currency) => currency.name)
               .join(", ")}
           </p>
-          <p className="country-detail__lang">
+          <p className="country-detail__info country-detail__lang">
             Languages: {Object.values(country.languages).join(", ")}
           </p>
-          <p className="country-detail__border">
+          <p className="country-detail__info country-detail__border">
             Borders:{" "}
             {country.borders && country.borders.length > 0
               ? country.borders
